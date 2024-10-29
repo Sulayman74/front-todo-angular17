@@ -1,27 +1,68 @@
-# TodoApp
+# Todo List - Angular 18 avec Backend Java/Spring Boot
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+Ce projet est une application de gestion de tâches (todo list) avec un frontend en Angular 18 qui se connecte à un backend en Java/Spring Boot. Il inclut un système de gestion des utilisateurs et des tâches (todos), et propose des fonctionnalités CRUD pour chaque entité.
 
-## Development server
+## Table des matières
+- [Installation](#installation)
+- [Prérequis](#prérequis)
+- [Fonctionnalités](#fonctionnalités)
+- [Technologies Utilisées](#technologies-utilisées)
+- [Contributions](#contributions)
+- [Licence](#licence)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prérequis
 
-## Build
+- **Node.js** v16+ et **npm** pour le frontend
+- **Java** 11+ et **Maven** pour le backend
+- **PostgreSQL** ou une autre base de données compatible avec Spring Data JPA (Hibernate dans ce cas là)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Cloner le dépôt
 
-## Running unit tests
+```bash
+git clone https://github.com/votre-utilisateur/votre-repo.git
+cd votre-repo
+```
+## Installation des dépendances Angular
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Accédez au dossier frontend et installez les dépendances Angular :
+```
+cd frontend
+npm install
+```
+Lancer le Frontend
 
-## Running end-to-end tests
+Démarrez l’application Angular :
+```
+cd frontend
+ng serve
+```
+Le frontend est accessible par défaut sur http://localhost:4200.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Fonctionnalités
 
-## Further help
+	•	Gestion des Utilisateurs : Créez, mettez à jour, supprimez et affichez les utilisateurs.
+	•	Gestion des Todos : Ajoutez, modifiez, supprimez et affichez les tâches.
+	•	Tableau de Bord : Affiche un tableau listant les tâches de l’utilisateur.
+	•	UI Simple et Intuitive : Fournit une interface utilisateur pour gérer les données du backend.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Technologies Utilisées
+
+	•	Frontend : Angular 18, TypeScript, HTML, CSS
+	•	Backend : Java, Spring Boot, Spring Data JPA
+	•	Base de Données : PostgreSQL (ou autre avec JPA)
+
+## Contributions
+
+Les contributions sont les bienvenues ! Veuillez ouvrir une issue pour discuter de ce que vous souhaitez améliorer ou ajouter.
+
+## Licence
+
+Ce projet est sous licence MIT.
+
+Ce README est conçu pour une installation rapide et une compréhension des fonctionnalités. N'hésitez pas à personnaliser les liens ou sections selon votre propre projet !
+
+
