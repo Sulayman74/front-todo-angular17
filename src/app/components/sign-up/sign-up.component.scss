@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login-card {
+  background-color: black;
+}
+.container {
+  background-color: plum;
+  height: 100svh;
+  width: 100svw;
+  color: white;
+}

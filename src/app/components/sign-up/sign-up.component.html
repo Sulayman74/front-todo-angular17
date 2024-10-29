@@ -1,0 +1,38 @@
+<div class="container flex justify-center items-center mx-auto p-2">
+  <mat-card class="login-card flex flex-col items-center h-full sm:h-3/4">
+    <h2 class="pt-3">Connectez-vous</h2>
+    <form
+      class="p-4 m-auto flex flex-col justify-evenly items-center w-full h-full"
+      [formGroup]="signUpForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <mat-form-field appearance="fill">
+        <mat-label>Email :</mat-label>
+        <input matInput formControlName="email" />
+        @if (signUpForm.get('email')?.invalid) {
+        <mat-error>Email requis</mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Prénom :</mat-label>
+        <input matInput formControlName="firstname" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Nom :</mat-label>
+        <input matInput formControlName="lastname" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Mot de passe :</mat-label>
+        <input matInput formControlName="password" />
+        @if (signUpForm.get('password')?.invalid) {
+        <mat-error>Mot de passe requis</mat-error>
+        }
+      </mat-form-field>
+      <button class="w-full" mat-flat-button>Valider</button>
+      <mat-card-actions class="flex flex-col justify-between w-full">
+        <p>Vous avez déjà un compte?</p>
+        <p>cliquez <a class="text-blue-500 underline" href="/login">ici</a></p>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>
